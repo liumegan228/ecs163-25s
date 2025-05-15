@@ -211,7 +211,7 @@ d3.csv("./data/mxmh_survey_results.csv").then(rawData =>{
         .style("fill", d => colorHeat(d.value))
         .append("title")
         .text(d => `${d.group} & ${d.variable}: Correlation = ${d.value.toFixed(3)}`);
-        
+         
     // add color legend for heatmap
     const legendWidth = 20;
     const legendHeight = heatHeight;
